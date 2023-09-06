@@ -3,7 +3,7 @@ st_slappy - simple terminal with some key modifications
 st is a simple terminal emulator for X which sucks less.
 
 =======================================================
-st_slappy is st modified with the following patches
+modified with the following patches
 direct from https://st.suckless.org/patches/
 
 st-alpha-0.8.2.diff - transparency (adjustable)
@@ -22,16 +22,19 @@ st-invert-0.8.4.diff
 Other additions direct in config.h:
 
 colorscheme -- solarized (also reads xresources)
-font -- JetBrains Mono NL size 14
-font2 -- fontawesome (icons) size 11
+font -- JetBrains Mono size 16 
+font2 -- fontawesome (icons) size 14 
 alt j/k -- keybind for terminal scroll dn/up
 
 ======================================================
 INSTALL
-1. clone - git clone https://github.com/slappy96/st_slappy.git
-2. cd st_slappy
+1. clone - git clone https://github.com/slappy96/st.git
+2. cd st
 3. make
 4. sudo make install
+
+CLEAN UP object files and executable
+1. sudo make clean
 
 UN-INSTALL
 1. sudo make uninstall
